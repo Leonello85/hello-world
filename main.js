@@ -2,8 +2,8 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
 // 2. Configuración de tus credenciales reales de Supabase
-const SUPABASE_URL = "TU_PROJECT_URL_AQUI";
-const SUPABASE_ANON_KEY = "TU_ANON_PUBLIC_KEY_AQUI";
+const SUPABASE_URL = "https://zbqrlyvjgfeycczixgqc.supabase.co/";
+const SUPABASE_ANON_KEY = "sb_publishable_sE5jMRoQ-SNjuSMWJSY63g_OEGn5h8e";
 
 // 3. Inicializar el cliente (aquí ya no hay ningún conflicto de nombres)
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -11,7 +11,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // 4. Función para INSERTAR datos
 async function guardarDatos() {
     const { data, error } = await supabase
-        .from('tu_tabla_aqui') // Reemplaza por tu tabla
+        .from('user') // Reemplaza por tu tabla
         .insert([
             { columna_nombre: 'Ejemplo desde entorno local', columna_numero: 99 } 
         ]);
@@ -26,7 +26,7 @@ async function guardarDatos() {
 // 5. Función para LEER datos
 async function obtenerDatos() {
     const { data, error } = await supabase
-        .from('tu_tabla_aqui') // Reemplaza por tu tabla
+        .from('user') // Reemplaza por tu tabla
         .select('*');          
 
     if (error) {
