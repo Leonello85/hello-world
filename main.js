@@ -9,7 +9,7 @@ const SUPABASE_URL = "API_URL";
 const SUPABASE_ANON_KEY = "API_KEY";
 
 // Tu lógica de JS normal usando esas variables...
-console.log("Conectando a:", API_URL);
+console.log("Conectando a:", SUPABASE_URL );
 
 // 3. Inicializar el cliente (aquí ya no hay ningún conflicto de nombres)
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
