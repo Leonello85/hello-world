@@ -5,8 +5,8 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 //const SUPABASE_URL = "https://zbqrlyvjgfeycczixgqc.supabase.co/";
 //const SUPABASE_ANON_KEY = "sb_publishable_sE5jMRoQ-SNjuSMWJSY63g_OEGn5h8e";
 // Archivo: script.js (o dentro de las etiquetas <script> en tu HTML)
-const SUPABASE_URL = "API_URL";
-const SUPABASE_ANON_KEY = "API_KEY";
+const SUPABASE_URL = "___VALOR_API_URL___";
+const SUPABASE_ANON_KEY = "___VALOR_API_KEY___";
 
 // Tu lógica de JS normal usando esas variables...
 console.log("Conectando a:", SUPABASE_URL );
